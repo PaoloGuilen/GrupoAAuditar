@@ -1,0 +1,164 @@
+/* Estilos generales de la página */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 240, 239);
+
+}
+
+header {
+    background-color: #ffffff; /* Color de fondo del encabezado */
+    color: #000; /* Color de texto */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Centra los elementos del menú horizontalmente */
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 20px; /* Espaciado entre elementos del menú */
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+/* Cambiar el color de fondo del enlace al pasar el ratón sobre él */
+nav a:hover {
+    background-color: #000; /* Fondo negro al pasar el ratón */
+    color: #fff; /* Texto blanco al pasar el ratón */
+    padding: 5px 5px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+/* Estilo adicional para resaltar la página activa */
+nav .active {
+    background-color: #555;
+    color:#fff
+}
+
+
+.container {
+    text-align: center;
+}
+
+/* Estilos del título */
+.titulo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+/* Estilos del formulario */
+form {
+    text-align: left;
+}
+
+.pregunta {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Evita que se pueda redimensionar */
+}
+
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Estilos del botón */
+.boton-enviar {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #ffffff;
+    color: #000000;
+    border-width: 3px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+/* Estilos del enlace de términos y condiciones */
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* En tu archivo stylescontactanos.css o donde estés definiendo tus estilos */
+
+/* Estilo para la imagen del banner */
+.banner-imagen {
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    display: block;
+    /* Añade cualquier otro estilo necesario, como margen o posición */
+}
+
+
+footer {
+    margin-top: 10%;
+
+}
+
+.profile-icon {
+    position: absolute;
+    top: 10px; 
+    right: 45px; 
+}
+
+.profile-icon img {
+    width: 32px; 
+    height: 32px;
+}

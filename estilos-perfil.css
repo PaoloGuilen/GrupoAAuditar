@@ -1,0 +1,182 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 240, 239);
+}
+
+header {
+    background-color: #ffffff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;   
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Centra los elementos del menú horizontalmente */
+    align-items: center;
+    
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 20px; /* Espaciado entre elementos del menú */
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+/* Cambiar el color de fondo del enlace al pasar el ratón sobre él */
+nav a:hover {
+    background-color: #000; /* Fondo negro al pasar el ratón */
+    color: #fff; /* Texto blanco al pasar el ratón */
+    padding: 5px 5px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+/* Estilo adicional para resaltar la página activa */
+nav .active {
+    background-color: #555;
+    color:#fff
+}
+
+.profile-icon {
+    position: absolute;
+    top: 10px; 
+    right: 45px; 
+}
+
+.profile-icon img {
+    width: 32px; 
+    height: 32px; 
+}
+
+
+/* SEPARACION DEL HEADER */
+
+
+/* Estilo para la sección de perfil de usuario */
+.user-profile {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000; /* Texto negro */
+    padding: 20px;
+    background-color: rgb(240, 240, 239);
+
+}
+
+/* Estilo para el contenedor de la imagen de perfil */
+.user-photo {
+    text-align: left; /* Alinea la imagen a la izquierda */
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+ 
+}
+
+/* Estilo para el contenedor de la foto */
+.photo-container {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente en el contenedor */
+    align-items: center; /* Centra la imagen verticalmente en el contenedor */
+}
+
+.photo-container img {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+.user-photo img {
+    max-width: 40%; /* Cambiar el tamaño máximo de la imagen al 100% del contenedor */
+    height: auto; /* Mantener la relación de aspecto */
+}
+
+#change-photo-button {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: black;
+    padding: 10px 20px; /* Ajusta el espacio vertical del botón */
+    cursor: pointer;
+    max-width: 200px; /* Establece un ancho máximo para el botón */
+    margin: 10px auto; /* Ajusta el margen para centrar horizontalmente */
+    border-radius: 5px; /* Aplica bordes redondeados de 5px de radio */
+}
+
+
+/* Estilo para el contenedor de la información principal */
+.user-info {
+    text-align: left; /* Alinea el texto a la izquierda */
+    display: flex;
+    flex-direction: column;
+    width: 60%; /* Asegura que ocupe el ancho completo de la sección */
+}
+
+.user-info h2 {
+    text-align: center; /* Centra los títulos horizontalmente */
+}
+
+.user-info label {
+    font-weight: bold; /* Texto en negrita para las etiquetas */
+}
+
+.user-info input,
+.user-info select {
+    width: 100%; /* Asegura que los campos de entrada y selectores ocupen todo el ancho disponible */
+    padding: 10px; /* Espaciado interno para los campos de entrada */
+    margin: 10px 0; /* Ajusta el margen superior e inferior para separar los elementos */
+}
+
+#update-button {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: black;
+    padding: 20px 40px; /* Ajusta el espacio vertical y horizontal del botón */
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Ajusta el margen para centrar horizontalmente */
+    position: absolute;
+    bottom: 90px; /* Ajusta la distancia desde la parte inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente con transform */
+    border-radius: 5px; /* Aplica bordes redondeados de 5px de radio */
+}
+
+#change-photo-button:hover {
+    background-color: #000000; /* Cambia el color al pasar el mouse */
+    color: #fff; /* Cambia el color del texto al pasar el mouse */
+}
+
+#update-button:hover {
+    background-color: #000000; /* Cambia el color al pasar el mouse */
+    color: #fffefe; /* Cambia el color del texto al pasar el mouse */
+}
+
+footer {
+    margin-top: 10%;
+
+}
